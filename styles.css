@@ -1,74 +1,92 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f3f9;
-  padding: 20px;
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
+/* ===== BODY ===== */
+body {
+  background: #fff4f7;
+  padding: 24px;
+  color: #333;
+}
+
+/* ===== TITULOS ===== */
 h1 {
   text-align: center;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .subtitle {
   text-align: center;
-  margin-bottom: 30px;
-  color: #555;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 32px;
 }
 
+/* ===== CONTENEDOR GENERAL ===== */
 .schedule {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   overflow-x: auto;
   padding-bottom: 20px;
 }
 
+/* ===== SEMESTRES ===== */
 .semester {
-  min-width: 200px;
+  min-width: 260px;
   background: #ffffff;
-  border-radius: 14px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .semester h2 {
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #555;
 }
 
+/* ===== RAMOS ===== */
 .course {
-  background: #f6a6c1;
-  padding: 14px;
-  margin: 10px 0;
-  border-radius: 10px;
+  background: #f7b6c8; /* rosado */
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  font-size: 13px;
   text-align: center;
   cursor: pointer;
-  transition: 0.3s;
-  font-size: 14px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.course.approved {
-  background: #9b5de5;
-  color: white;
-  text-decoration: line-through;
-}
-/* ===== COLORES DEFINITIVOS ===== */
-.course {
-  background-color: #f7b6c8;
-  color: #1f1f1f;
+/* hover suave */
+.course:hover {
+  transform: scale(1.03);
 }
 
+/* ===== APROBADO ===== */
 .course.approved {
-  background-color: #7b2cbf;
-  color: white;
+  background: #7b2cbf; /* morado */
+  color: #fff;
   text-decoration: line-through;
 }
 
+/* ===== BLOQUEADO ===== */
 .course.locked {
-  background-color: #cfcfcf;
-  color: #666;
-}
-
-.course.locked {
-  background: #d1d1d1;
+  background: #e0e0e0;
+  color: #888;
   cursor: not-allowed;
-  opacity: 0.6;
+  box-shadow: none;
+}
+
+/* ===== SCT ===== */
+.course b {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  margin-top: 4px;
+  opacity: 0.85;
 }
