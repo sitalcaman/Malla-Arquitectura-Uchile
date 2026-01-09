@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Horario Arquitectura UChile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>🗓️ Horario / Malla Arquitectura UChile</h1>
+<p class="subtitle">Click en cada ramo para marcarlo como aprobado</p>
+
+<div class="schedule">
+
+  <!-- SEMESTRE 1 -->
+  <div class="semester">
+    <h2>Sem 1</h2>
+    <div class="course" data-id="t1">Taller 1</div>
+    <div class="course" data-id="fund">Fundamentos de la Arquitectura</div>
+    <div class="course" data-id="hist1">Historia, Cultura y Habitar</div>
+    <div class="course" data-id="mat">Matemáticas</div>
+  </div>
+
+  <!-- SEMESTRE 2 -->
+  <div class="semester">
+    <h2>Sem 2</h2>
+    <div class="course locked" data-id="t2" data-prereq="t1">Taller 2</div>
+    <div class="course">Investigación del Entorno</div>
+    <div class="course">Geometría</div>
+    <div class="course">Física</div>
+  </div>
+
+  <!-- SEMESTRE 3 -->
+  <div class="semester">
+    <h2>Sem 3</h2>
+    <div class="course locked" data-id="t3" data-prereq="t2">Taller 3</div>
+    <div class="course">Sostenibilidad Urbana</div>
+    <div class="course">Arquitectura y Sismo</div>
+  </div>
+
+  <!-- SEMESTRE 4 -->
+  <div class="semester">
+    <h2>Sem 4</h2>
+    <div class="course locked" data-id="t4" data-prereq="t3">Taller 4</div>
+    <div class="course">Principios de Habitabilidad</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
