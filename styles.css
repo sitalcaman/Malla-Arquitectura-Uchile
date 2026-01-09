@@ -50,6 +50,22 @@ h1 {
   color: white;
   text-decoration: line-through;
 }
+/* ===== COLORES DEFINITIVOS ===== */
+.course {
+  background-color: #f7b6c8;
+  color: #1f1f1f;
+}
+
+.course.approved {
+  background-color: #7b2cbf;
+  color: white;
+  text-decoration: line-through;
+}
+
+.course.locked {
+  background-color: #cfcfcf;
+  color: #666;
+}
 
 .course.locked {
   background: #d1d1d1;
